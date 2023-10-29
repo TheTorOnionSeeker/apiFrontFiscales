@@ -4,7 +4,7 @@ const router = Router();
 const {
   cargaInfo,
   getInfo,
-} = require("../controllers/cargainfofiscales.controllers.js");
+} = require("../controllers/cargainfoescuelas.controllers.js");
 
 router.get("/", getInfo);
 router.post("/", cargaInfo);
