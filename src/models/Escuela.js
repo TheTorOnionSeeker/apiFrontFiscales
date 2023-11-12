@@ -16,8 +16,9 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     coordenadas: {
-      type: DataTypes.ARRAY,
+      type: DataTypes.ARRAY(DataTypes.JSON),
       allowNull: false,
+      defaultValue: [],
     },
     ubicacion: {
       type: DataTypes.STRING,
