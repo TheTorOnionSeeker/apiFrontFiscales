@@ -4,6 +4,8 @@ const morgan = require("morgan");
 const cors = require("cors");
 const routes = require("./routes/index.js");
 
+require("./db.js");
+
 const server = express();
 
 server.use(express.json({ limit: "50mb" }));
@@ -14,6 +16,8 @@ server.use(morgan("dev"));
 server.use(cors());
 
 server.use("/", routes);
+
+server.use(express.static("../../client/html-js"));
 
 // Error catching endware.
 server.use((err, req, res, next) => {

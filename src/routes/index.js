@@ -1,8 +1,10 @@
 const { Router } = require("express");
-const router=Router();
+const router = Router();
 
-const cargaInfoFiscalesRouter=require("./cargaInfoFiscalesRoutes.js")
+const cargaInfoFiscalesRouter = require("./cargaInfoFiscalesRoutes.js");
+const cargaInfoEscuelasRouter = require("./cargaInfoEscuelasRoutes.js");
 
-router.use("/carga_info_fiscales", cargaInfoFiscalesRouter);
+router.use("/fiscales", cargaInfoFiscalesRouter);
+router.use("/escuelas", cargaInfoEscuelasRouter);
 
-module.exports=router;
+module.exports = router;
