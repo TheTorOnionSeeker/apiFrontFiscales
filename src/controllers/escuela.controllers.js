@@ -24,7 +24,7 @@ async function createEscuela(req, res) {
 async function getAll(req, res) {
   try {
     const DBescuelas = await Escuela.findAll({
-      attributes: ["id", "nombre", "numero", "coordenadas", "ubicacion"],
+      attributes: ["id", "nombre", "numero", "ubicacion"],
     });
     if (DBescuelas === null) throw new Error("Escuelas no encontradas!");
     res.status(200).json(DBescuelas);
