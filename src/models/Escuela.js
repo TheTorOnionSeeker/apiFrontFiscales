@@ -15,11 +15,11 @@ module.exports = (sequelize) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    /* coordenadas: {
+    coordenadas: {
       type: DataTypes.ARRAY(DataTypes.JSON),
       allowNull: false,
       defaultValue: [],
-    }, */
+    },
     ubicacion: {
       type: DataTypes.STRING,
       allowNull: false,
