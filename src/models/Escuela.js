@@ -11,6 +11,10 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: true,
     },
+    numero: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     coordenadas: {
       type: DataTypes.ARRAY(DataTypes.JSON),
       allowNull: false,
