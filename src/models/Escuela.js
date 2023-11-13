@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
     },
     nombre: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     numero: {
       type: DataTypes.INTEGER,
@@ -22,7 +22,7 @@ module.exports = (sequelize) => {
     },
     ubicacion: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   });
 };
